@@ -3,8 +3,13 @@ body {
   color: #E8ECF1;
 }
 
-a { color: #FF8C42; }
-h1, h2, h3 { color: #F76900; }
+a {
+  color: #FF8C42;
+}
+
+h1, h2, h3 {
+  color: #F76900;
+}
 
 nav {
   background-color: #000E54;
@@ -12,8 +17,13 @@ nav {
   margin-bottom: 30px;
 }
 
-nav a { color: #FFFFFF; }
-nav a:hover { background-color: #F76900; }
+nav a {
+  color: #FFFFFF;
+}
+
+nav a:hover {
+  background-color: #F76900;
+}
 
 footer {
   overflow: auto;
@@ -35,7 +45,8 @@ footer {
 }
 
 .contact-box {
-  flex: 1;
+  width: calc(50% - 20px);
+  box-sizing: border-box;
   background-color: #14325C;
   border-radius: 15px;
   padding: 20px;
@@ -91,7 +102,8 @@ input[type="submit"] {
   flex-wrap: wrap;
 }
 
-.skillstable, .skillsimage {
+.skillstable,
+.skillsimage {
   flex-basis: 50%;
 }
 
@@ -105,6 +117,7 @@ input[type="submit"] {
 
 .skillsimage img {
   max-width: 100%;
+  height: auto;
   box-sizing: border-box;
   background-color: white;
   padding: 15px;
@@ -124,5 +137,18 @@ input[type="submit"] {
 
   nav span {
     display: none;
+  }
+
+  .contact-box {
+    width: calc(100% - 20px);
+  }
+
+  .skillstable,
+  .skillsimage {
+    flex-basis: 100%;
+  }
+
+  .skillsimage {
+    margin-top: 20px;
   }
 }
