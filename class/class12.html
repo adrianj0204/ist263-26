@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Practice</title>
+
+    <style>
+        h1 {
+            color: #ff0000;
+        }
+
+        a {
+            color: #0000ff;
+        }
+
+        a:visited {
+            color: #800080;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="myid"></div>
+
+    <h1>Header 1</h1>
+    <h2>Header 2</h2>
+    <h3>Header 3</h3>
+    <h6>Header 6</h6>
+
+    <p>Page Content Goes Here</p>
+    <p>Paragraph 2</p>
+
+    <img id="guitar" src="lespaul.jpg" alt="Les Paul">
+
+    <p>What is 2 + 2?</p>
+    <p onclick="alert('wrong answer');">5</p>
+    <p onclick="alert('right answer');">4</p>
+
+    <script>
+        document.getElementById("myid").innerHTML = "<p>Hello World</p>";
+        document.getElementById("guitar").setAttribute("src", "lespaul.jpg");
+        document.getElementById("guitar").setAttribute("alt", "Les Paul");
+        document.getElementById("myid").style.color = "#000000";
+    </script>
+</body>
+</html>
