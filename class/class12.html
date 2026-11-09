@@ -2,45 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Practice</title>
+    <title>True or False</title>
 
     <style>
-        h1 {
-            color: #ff0000;
-        }
-
-        a {
-            color: #0000ff;
-        }
-
-        a:visited {
-            color: #800080;
+        .answer {
+            cursor: pointer;
         }
     </style>
+
+    <script>
+        function wrongAnswer() {
+            document.getElementById("true").innerHTML = "Wrong answer!";
+            document.getElementById("true").style.color = "red";
+        }
+
+        function rightAnswer() {
+            document.getElementById("false").innerHTML = "Right answer!";
+            document.getElementById("false").style.color = "green";
+        }
+    </script>
 </head>
 
 <body>
-    <div id="myid"></div>
+    <p>True or False: 2 + 2 = 5.</p>
 
-    <h1>Header 1</h1>
-    <h2>Header 2</h2>
-    <h3>Header 3</h3>
-    <h6>Header 6</h6>
-
-    <p>Page Content Goes Here</p>
-    <p>Paragraph 2</p>
-
-    <img id="guitar" src="lespaul.jpg" alt="Les Paul">
-
-    <p>What is 2 + 2?</p>
-    <p onclick="alert('wrong answer');">5</p>
-    <p onclick="alert('right answer');">4</p>
-
-    <script>
-        document.getElementById("myid").innerHTML = "<p>Hello World</p>";
-        document.getElementById("guitar").setAttribute("src", "lespaul.jpg");
-        document.getElementById("guitar").setAttribute("alt", "Les Paul");
-        document.getElementById("myid").style.color = "#000000";
-    </script>
+    <div id="true" class="answer" onclick="wrongAnswer()">True</div>
+    <div id="false" class="answer" onclick="rightAnswer()">False</div>
 </body>
 </html>
